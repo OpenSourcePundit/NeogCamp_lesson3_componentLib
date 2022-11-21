@@ -1,0 +1,109 @@
+body{
+    color:rgb(22, 109, 4);
+}
+h2{
+    color:blueviolet;
+}
+/* selector via TAGS CLASS ID */
+#social-id{
+    color:pink;
+}
+.shn{
+    color:peru;
+}
+hr{
+    background:rgb(228, 10, 10);
+    margin: 2rem 0rem;
+    width: auto;
+    height: 4px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
+h2{
+    font-family: 'Shalimar', cursive;
+}
+
+:root{
+    --primary-color: rgb(78, 231, 58);
+    --secondary-color:rgb(216, 231, 9);
+    
+}
+
+/*CSS BOX MODEL-___ MBPC  Margin Border Padding Content*/
+/*containers*/
+.containers{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.containers-center{
+    max-width: 500px;
+    margin: auto;
+}
+.link{
+    text-decoration: none;
+    padding: .2rem .2rem;
+}
+.link-primary{
+    background-color:var(--primary-color);
+    border-radius: .2rem;
+    color: beige;
+}
+.link-secondary{
+    background-color: white;
+    border-radius: .2rem;
+    border-color: brown;
+    border: 1px solid var(--primary-color);
+}
+
+/*list non bullet ----inline----reverse*/
+.list-non-bullet{
+    list-style: none;
+}
+
+.item-list-inline{
+    display: inline;
+    padding: 0rem 1rem;
+}
+
+/*nav*/
+.navigation{
+    background-color: var(--secondary-color);
+    color: aliceblue;
+    padding: .2rem .2rem;
+    border-bottom-left-radius: 1rem;
+   
+
+}
+.navigation .link{
+    background-color: aqua;
+    border-radius:.3rem;
+    color:black;
+    text-align: left;
+    
+}
+
+.nav-brand{
+    text-align: left;
+    font-size: 2.1rem;
+    font-weight: bolder;
+}
+.navigation .nav-pills{
+    text-align:right;
+}
+
+/*header*/
+
+.header{
+    padding:0.5rem;
+}
+.header-img{
+    max-width: 250px;
+    display: block;
+    margin:auto;
+}
+.header-heading{
+    color: blue;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+

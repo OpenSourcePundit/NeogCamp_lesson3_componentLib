@@ -18,14 +18,14 @@
     <small>This is relatively smaller text (is inline element)</small>
     <hr>
     <h2>@containers</h2>
-    <h3>center containers</h3>
-    <div> Its an empty space, so we can use 'div' for this</div>this is a center thing.header is a centric thing</div>
-    <h3>fluid containers</h3>
-    <div>this goes from end to end. Here footer and NAV are end to end</div>
+    <h3 class="containers containers-center">center containers</h3>
+    <div class="containers containers-center"> Its an empty space, so we can use 'div' for this,this is a center thing.header is a centric thing</div>
+    <h3 class="containers">fluid containers</h3>
+    <div class="containers">this goes from end to end. Here footer and NAV are end to end</div>
     <h2>@links</h2>
     <h3>(this is an inline element)</h3>
-    <a href="/">Primary link</a>
-    <a href="/">Secondary link</a>
+    <a class=" link link-primary" href="/">Primary link</a>
+    <a class="link link-secondary"href="/">Secondary link</a>
     <hr>
     <h2> @Lists</h2>
     <div>
@@ -35,7 +35,7 @@
         <div>3.Raju</div>
     </div>
     <h3>Unordered list using 'ul'</h3>
-    <ul>
+    <ul class="list-non-bullet">
         <li>item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
@@ -44,13 +44,13 @@
 <hr>
 <h3>Unordered inline list</h3>
 <ul>
-    <li>Inline item 1</li>
-    <li>Inline itme 2</li>
-    <li>Inline item 3</li>
+    <li class="item-list-inline" >Inline item 1</li>
+    <li class="item-list-inline" >Inline itme 2</li>
+    <li class="item-list-inline" >Inline item 3</li>
 </ul>
 <hr>
 <h3> Reverse ordered list(ordered list has numbering)</h3>
-<ol>
+<ol reversed>
     <li>Reverse item 1</li>
     <li>Reverse itme 2</li>
     <li>Reverse item 3</li>
@@ -58,6 +58,70 @@
 <hr>
 <h2>@nav</h2>
 <h3>when screen reader moves it knows these are impt to traverse website. Nav has nothing of its own , similar to div</h3>
+
+<nav class="navigation">
+    <div class="nav-brand">I am a Brand</div>
+    <ul class="list-non-bullet  nav-pills">
+        <li class="item-list-inline">
+            <a class="link"href="https://gmail.com/">Mails</a>
+        </li>
+        <li class="item-list-inline">
+            <a class="link" href="https://facebook.com/">Facebook</a>
+        </li>
+    </ul>
+</nav> 
+<hr>
+<h2>@header</h2>
+<h3>header also has psemantic component</h3>
+<header class="header">
+    <img class="header-img" src="svg_image.svg" alt="">
+    <h2 class="header-heading">heading inside header, nextis png image</h2>
+    <img class="header-img-1" src="png image.png" alt="">
+    <p> <a class="header-link" href="https://undraw.co/">undraw.co</a> is used for picture above.</p>
+    <p>Color theme: <a class="header-link"href="https://tailwindcss.com/"> tailwindcss</a></p>
+
+</header>
+
+<hr>
+<h2>@Sections</h2>
+<section>
+    <h3>These are sections,white</h3>
+    <p>This will be white</p>
+</section>
+<section>
+    <h3>Off white section</h3>
+    <p>this will be off white in color</p>
+</section>
+<hr>
+
+<h2>@Footer</h2>
+<footer>
+    <div style="color:blue">style="color:red" Some small heading inside footer</div>
+    <ul>
+        <li id="social-id">social 1</li>
+        <li class="shn">Social 2</li>
+        <li class="shn">Social 3</li>
+    </ul>
+
+    <p style="color:black">A later written <strong>BOLD</strong> text</p>
+</footer>
+<style>
+       body{
+        color :rebeccapurple;
+        }
+</style>
+
+<!-- CSS insertion : 3 ways-->
+<!-- 1.Style Tag
+     2.Style attributes
+     3.seperate style sheet 
+    <link rel="stylesheet" href="styles.css">-->
+<link rel="stylesheet" href="styles.css">
+
+
+
+
+
 
 
 
